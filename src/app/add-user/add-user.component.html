@@ -1,0 +1,21 @@
+<h2>Add User</h2>
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+    <div>
+        <label for="userName">User Name</label>
+        <input type="text" name="userName" ngModel>
+    </div>
+    <div>
+        <label for="userAge">User Age</label>
+        <input type="number" name="userAge" ngModel>
+    </div>
+    <div>
+        <label for="gender">Gender</label>
+        <input type="radio" id="Male" name="gender" value="Male" ngModel>
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female" ngModel>
+        <label for="Female">Female</label>
+    </div>
+    <div>
+        <button type="submit">Add User</button>
+    </div>
+</form>
